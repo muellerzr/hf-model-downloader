@@ -1,10 +1,10 @@
-# hf-downloader
+# hf-model-downloader
 
 ## Install
 
-`pip install hf-downloader`
+`pip install hf-model-downloader`
 
-`pip install git+https://github.com/muellerzr/hf-downloader`
+`pip install git+https://github.com/muellerzr/hf-model-downloader`
 
 ## What is it?
 
@@ -23,7 +23,7 @@ As this is a wrapper around the `huggingface_hub` CLI, tokens can be passed in v
 
 **Downloading the `.safetensors` version** (default)
 ```bash
-hf-downloader --backend safetensors meta-llama/Meta-Llama-3.1-8B-Instruct 
+download-model --backend safetensors meta-llama/Meta-Llama-3.1-8B-Instruct 
 ```
 
 **Downloading the `.pth` version**
