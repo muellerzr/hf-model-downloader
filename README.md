@@ -33,7 +33,7 @@ hf-downloader --backend torch meta-llama/Meta-Llama-3.1-8B-Instruct
 
 **Downloading to a specific directory**
 ```bash
-hf-downloader --local-dir my_llama meta-llama/Meta-Llama-3.1-8B-Instruct 
+hf-downloader --local_dir my_llama meta-llama/Meta-Llama-3.1-8B-Instruct 
 ```
 
 **Using `hf_transfer` for faster downloads**
