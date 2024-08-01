@@ -8,7 +8,7 @@
 
 ## What is it?
 
-An easy way to download models quickly from huggingface.co with specified backends to specific directories. 
+An easy way to download models quickly from huggingface.co with specified backends to specific directories. 
 
 While on its own you can pass in `--local_dir` when using the `huggingface_hub` CLI, many libraries (such as all of the `meta-llama` models) come with two sets
 of weights in the repo, `original` and `safetensor` varients *in the same branch*. As a result, this can bloat our downloads when we don't need them.
@@ -23,20 +23,23 @@ As this is a wrapper around the `huggingface_hub` CLI, tokens can be passed in v
 
 **Downloading the `.safetensors` version** (default)
 ```bash
-download-model --backend safetensors meta-llama/Meta-Llama-3.1-8B-Instruct 
+download-model --backend safetensors meta-llama/Meta-Llama-3.1-8B-Instruct 
 ```
 
 **Downloading the `.pth` version**
 ```bash
-hf-downloader --backend torch meta-llama/Meta-Llama-3.1-8B-Instruct 
+download-model --backend torch meta-llama/Meta-Llama-3.1-8B-Instruct 
 ```
 
 **Downloading to a specific directory**
 ```bash
-hf-downloader --local_dir my_llama meta-llama/Meta-Llama-3.1-8B-Instruct 
+download-model --local_dir my_llama meta-llama/Meta-Llama-3.1-8B-Instruct 
 ```
 
 **Using `hf_transfer` for faster downloads**
 ```bash
-hf-downloader --fast meta-llama/Meta-Llama-3.1-8B-Instruct
+download-model --fast meta-llama/Meta-Llama-3.1-8B-Instruct
 ```
+
+
+
